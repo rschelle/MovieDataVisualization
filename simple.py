@@ -84,7 +84,7 @@ def DisplayBoxChart():
     movieData = CleanDataFrame()
     #### Creates a plotly express bar chart
     return px.bar(movieData, x = "Directors", y = "gross", title = "Directors From the Past 40 Years and The Total Box Office Income Their Movies Produced",
-                labels = {"gross":"Total Movie Sales", "Directors":"Director"}, width = 2*400)
+                labels = {"gross":"Total Movie Sales", "Directors":"Director"}, width = 2*325)
 
 
 #### Scatter plot of total amount of movies in the past 40 years grouped by their rating
@@ -205,9 +205,11 @@ row0_spacer1, row0_1, row0_spacer2 = st.columns((0.1, 3, 0.1))
 
 row0_1.title("Analyzing The Relationship Between Movies and The Gross Number")
 
-row0_1.subheader("Streamlit web page by [AI-Camp](http://www.ai-camp.org):\"Imagine Dragons\" Team")
+row0_1.subheader("Streamlit web page by [AI-Camp](http://www.ai-camp.org):\"Imagine Dragons\" Team:")
 
 row1_spacer1, row1_1, row1_spacer2 = st.columns((0.1, 2, 0.1))
+
+st.write("Andrew, Krystal, Austin, Joshua, Jiayi, Rose, Robert")
 
 with row1_1:
     st.markdown("Hi! Welcome to the project made by Imagine Dragons Team from the AI Camp, and we take a deep look of the relationship between movies and the gorss number. In our research, we focus on different aspects of the movie industry and analyze how they connect to the final gross number. To accompish these tasks we made use of two different datasets: [dataset 1](https://www.kaggle.com/danielgrijalvas/movies), [dataset 2](https://www.kaggle.com/johnharshith/hollywood-theatrical-market-synopsis-1995-to-2021).")
@@ -234,7 +236,7 @@ with row3_1:
     st.text(" ")
     st.text(" ")
     st.text(" ")
-    st.write(".\n.\n.\n This visual(bar chart)clearly depicts the number of movies in which each of the nine movie celebrities has starred, the color-coding makes this chart even more engrossing and easy to analyze. It is interesting to see that Nicolas Cage has starred in most movies, Robert De Niro and Tom Hanks have starred in surprisingly the same number of movies from 1980 to 2020.") ###Add in description after choosing plot    
+    st.write("This visual(bar chart)clearly depicts the number of movies in which each of the nine movie celebrities has starred, the color-coding makes this chart even more engrossing and easy to analyze. It is interesting to see that Nicolas Cage has starred in most movies, Robert De Niro and Tom Hanks have starred in surprisingly the same number of movies from 1980 to 2020.") ###Add in description after choosing plot    
     st.text(" ")
     st.write("From [Dataset 1](https://www.kaggle.com/danielgrijalvas/movies)")
 
@@ -248,7 +250,7 @@ with row4_1:
     st.plotly_chart(DisplayBoxChart())
     st.text(" ")
     st.text(" ")
-    st.write("This box chart displays the top 20 gross total movie sales with there respective directors.") ##Update Description to match the box chart
+    st.write("This box chart displays the top 20 gross total movie sales with there respective directors. Something to note is despite most of these directors starting there careers at the same time sometime (around 1994 some even earlier than that), Steven Spielberg has disproportionately made more gross movie sales.") ##Update Description to match the box chart
     st.text(" ")
     st.write("From [Dataset 1](https://www.kaggle.com/danielgrijalvas/movies)")
     
@@ -262,13 +264,6 @@ with row5_1:
         "This graph shows the total amount of movies in the past 40 years grouped by their rating. Something to note is how "R" rated movies seem to dominate the market compared to the other ratings.")
     st.text(" ")
     st.write("From [Dataset 1](https://www.kaggle.com/danielgrijalvas/movies)")
-
-with row5_1:
-    ####Scatter plot goes here
-    st.plotly_chart(Market_Share_of_distrubutors())
-    st.write("This visual describes the market share of disributors such as Disney. What I notice from the graph is that despite Disney's large market share, it only really controls 17% of the entire market.")
-    st.text(" ")
-    st.write("From [Dataset 2](https://www.kaggle.com/johnharshith/hollywood-theatrical-market-synopsis-1995-to-2021)")
     
     
 row7_spacer1, row7_1, row7_spacer2 = st.columns((0.1, 4, 0.1))
@@ -304,4 +299,9 @@ with row10_1:
     st.write(" Average Gross Revenue of Distributor. This visual shows Walt Disney generates the highest average gross revenue compared to its peers, while Miramax generates the lowest average gross revenue.")
     st.text(" ")
     st.write("From [Dataset 2](https://www.kaggle.com/johnharshith/hollywood-theatrical-market-synopsis-1995-to-2021)")
+    
+row11_spacer1, row11_1, row11_spacer2 = st.columns((0.1, 4, 0.1))
+
+with row11_1:
+    st.markdown("In the research, we use different charts in order to show how different aspects of the movie industry (including actors, directors etc.) affect the total gross number at the end. Moreover, we can also analyze that each parts of the movie productionhow they connect to each other. Thank you for  reading our web page and we all wish you have a great day!")
 
