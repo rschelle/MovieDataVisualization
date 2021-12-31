@@ -114,7 +114,7 @@ def FixDataFrame1():
 def MovieDataFrame():
 #### Brings the 3 lists together into one pandas DataFrame
     yearList, ratingList = FixDataFrame1()
-    moviesDataFrame = pd.DataFrame(list(zip(yearList, ratingList, GroupData()["name"].tolist()
+    moviesDataFrame = pd.DataFrame(list(zip(yearList, ratingList, GroupData1()["name"].tolist()
 )), columns = ['Year', 'Rating', 'Movies'])
     return moviesDataFrame
 
