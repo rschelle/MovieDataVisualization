@@ -209,9 +209,9 @@ row0_1.subheader("Streamlit web page by [AI-Camp](http://www.ai-camp.org):\"Imag
 
 row1_spacer1, row1_1, row1_spacer2 = st.columns((0.1, 2, 0.1))
 
-st.write("Andrew, Krystal, Austin, Joshua, Jiayi, Rose, Robert")
 
 with row1_1:
+    st.write("Andrew, Krystal, Austin, Joshua, Jiayi, Rose, Robert")
     st.markdown("Hi! Welcome to the project made by Imagine Dragons Team from the AI Camp, and we take a deep look of the relationship between movies and the gorss number. In our research, we focus on different aspects of the movie industry and analyze how they connect to the final gross number. To accompish these tasks we made use of two different datasets: [dataset 1](https://www.kaggle.com/danielgrijalvas/movies), [dataset 2](https://www.kaggle.com/johnharshith/hollywood-theatrical-market-synopsis-1995-to-2021).")
 
 row2_spacer1, row2_1, row2_spacer2,row2_2, row2_spacer3 = st.columns((0.1, 2.5, 0.1, 1.5, 0.1))
@@ -303,5 +303,6 @@ with row10_1:
 row11_spacer1, row11_1, row11_spacer2 = st.columns((0.1, 4, 0.1))
 
 with row11_1:
-    st.markdown("In the research, we use different charts in order to show how different aspects of the movie industry (including actors, directors etc.) affect the total gross number at the end. Moreover, we can also analyze that each parts of the movie productionhow they connect to each other. Thank you for  reading our web page and we all wish you have a great day!")
+    st.markdown("In the research, we use different charts in order to show how different aspects of the movie industry (including actors, directors, genres etc.) affect the total gross number at the end. Moreover, we can analyze that each parts of the movie production are important since they all make huge impacts. Thank you for reading Imagine Gragons Team's web page and we all wish you have a great day!")
+    st.markdown("We made this website using plotly and streamlit, which make data visualization and website hosting easy, respectively! Check out the code behind this website [here](https://github.com/rschelle/MovieDataVisualization)")
 
